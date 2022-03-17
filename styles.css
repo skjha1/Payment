@@ -1,0 +1,108 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: none;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-body {
+    padding: 15px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #C0E0DE;
+}
+
+.accordion-body {
+    background-color: #040F16;
+    color: #C0E0DE;
+}
+.method-row {
+    display: inline-block;
+}
+
+.method-row-crypto {
+    display: inline-flex;
+}
+
+.payment-methode-qr {
+    width: 285px;
+    margin: 12px;
+    padding: 5px;
+    border-radius: 7px;
+    background: linear-gradient(211deg, rgba(0,194,255,1) 13%, rgb(64,55,145,1) 100%);
+    color: #040F16;
+}
+
+.payment-methode-qr-crypto {
+    width: 285px;
+    margin: 12px;
+    padding: 15px;
+    border-radius: 7px;
+    background: rgb(64,55,145);
+    background: linear-gradient(211deg, rgba(64,55,145,1) 13%, rgba(31,31,31,0.9976365546218487) 83%);
+    color: #C0E0DE;
+    overflow:auto;
+}
+
+.text-address {
+    font-size: medium;
+    color: #C0E0DE;
+    padding: 10px;
+    border: 2px solid black;
+    overflow: auto;
+    border-radius: 7px;
+    margin-right: 14px;
+    margin-left: 14px;
+}
+
+.text-address::-webkit-scrollbar {
+    display:none;
+  }
+
+
+.img-qr {
+    width: 220px;
+    height: 220px;
+    border-radius: 6px;
+    margin-top: 7px;
+}
+
+.crypto-logo {
+    height: 35px;
+    width: 35px;
+    margin: 7px;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 768px) {
+    body, html {
+        background-image: url('bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        scroll-behavior: smooth;
+        scroll-snap-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    .payment-methode-qr-crypto {
+        width: 280px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 7px;
+        background: rgb(64,55,145);
+        background: linear-gradient(211deg, rgba(64,55,145,1) 13%, rgba(31,31,31,0.9976365546218487) 83%);
+        color: #C0E0DE;
+    }
+
+    .method-row-crypto {
+        display: inline-block;
+    }
+    
+}
